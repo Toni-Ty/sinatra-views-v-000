@@ -7,5 +7,10 @@
         <h1>Hello World</h1>
         <p>This HTML code is inside of a '.erb' file in the views directory, where it belongs.</p>
   <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
+  <ul>
+  <% wall_posts.each do |post| %>
+    <li><%= post %></li>
+  <% end %>
+</ul>
     </body>
 </html>
