@@ -6,12 +6,11 @@
     <body>
         <h1>Hello World</h1>
         <p>This HTML code is inside of a '.erb' file in the views directory, where it belongs.</p>
-
         <ul>
-        <li>1</li>
-        <li>4</li>
-        <li>9</li>
-        <li>16</li>
-      </ul>
+          <% squares = [1, 4, 9, 16] %>
+          <% squares.each do |square| %>
+            <li><%= square %></li>
+          <% end %>
+        </ul>
     </body>
 </html>
